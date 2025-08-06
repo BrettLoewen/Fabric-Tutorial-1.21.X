@@ -2,6 +2,7 @@ package net.supremetor.tutorialmod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.supremetor.tutorialmod.block.ModBlocks;
 import net.supremetor.tutorialmod.item.ModItemGroups;
 import net.supremetor.tutorialmod.item.ModItems;
@@ -21,6 +22,8 @@ public class TutorialMod implements ModInitializer {
         ModItemGroups.registerItemGroups();
         ModItems.registerModItems();
         ModBlocks.registerModBlocks();
+
+        FuelRegistry.INSTANCE.add(ModItems.STARLIGHT_ASHES, 20000);
 
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
