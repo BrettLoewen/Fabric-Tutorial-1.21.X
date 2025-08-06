@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
 import net.supremetor.tutorialmod.block.ModBlocks;
+import net.supremetor.tutorialmod.item.ModItems;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -29,5 +30,14 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.PINK_GARNET_ORE)
                 .add(ModBlocks.PINK_GARNET_DEEPSLATE_ORE);
+
+        getOrCreateTagBuilder(BlockTags.FENCES)
+                .add(ModBlocks.PINK_GARNET_FENCE);
+
+        getOrCreateTagBuilder(BlockTags.FENCE_GATES)
+                .add(ModBlocks.PINK_GARNET_FENCE_GATE);
+
+        getOrCreateTagBuilder(BlockTags.WALLS)
+                .add(ModBlocks.PINK_GARNET_WALL);
     }
 }
