@@ -1,4 +1,4 @@
-// 1.21	2025-08-06T21:36:16.3798612	Tutorial Mod/Model Definitions
+// 1.21	2025-08-06T22:50:55.5713136	Tutorial Mod/Model Definitions
 b9ccd68386e9b137372d28d9568e2ba644f217f5 assets\tutorial-mod\blockstates\pink_garnet_ore.json
 9a344166ae863a765ef494f4548b8e6cde8ceddc assets\tutorial-mod\models\block\pink_garnet_door_bottom_right_open.json
 3f88ea5f7f7bc95712998c350b32baaa42719359 assets\tutorial-mod\blockstates\pink_garnet_block.json
@@ -10,6 +10,7 @@ f1ed6f6d3d2f9aad8910e8339097e608d690b346 assets\tutorial-mod\models\block\pink_g
 a2df72cf9e5de8264d84749897faef205823608f assets\tutorial-mod\models\item\pink_garnet_fence.json
 96e3af71ef7872e1502aa899d934aa1f124682b7 assets\tutorial-mod\models\block\pink_garnet_door_bottom_left.json
 da613f8a9883ff7e5468a8d640ba1b2a54be7fee assets\tutorial-mod\models\block\pink_garnet_door_top_left_open.json
+9a32a50d9c6492dc941f04a3b59f6fa9cdeb1524 assets\tutorial-mod\models\item\pink_garnet_hammer.json
 486b4b6bcef7173eff8db8287fae014b427ae17e assets\tutorial-mod\models\block\pink_garnet_wall_side_tall.json
 5acbbc279773244219a25ea7a3f5b32cb828a126 assets\tutorial-mod\models\block\pink_garnet_fence_inventory.json
 d63aed6cd6d8888916cf0ee2b1fcf9a82e2571e1 assets\tutorial-mod\blockstates\pink_garnet_button.json
@@ -17,9 +18,9 @@ d63aed6cd6d8888916cf0ee2b1fcf9a82e2571e1 assets\tutorial-mod\blockstates\pink_ga
 e9a2df46ae659fffa73bb84e4e0c7d552d02039c assets\tutorial-mod\models\block\pink_garnet_door_top_right.json
 d771080e90ba568fa358c7dc72f074220a7be546 assets\tutorial-mod\blockstates\pink_garnet_lamp.json
 2e8fe86a53bb0de0b58ca09f66e4a9223650e982 assets\tutorial-mod\blockstates\pink_garnet_fence_gate.json
-1500cf5619920d9c88ea535d3ef3d2d1eb14ec53 assets\tutorial-mod\blockstates\pink_garnet_stairs.json
 e7879927dc2cee9b119f7359deb62c7bc01ab7d7 assets\tutorial-mod\models\item\pink_garnet_trapdoor.json
 da620612fe1fe90fb30fcb8f61ddd2bb2866eb28 assets\tutorial-mod\models\item\pink_garnet_wall.json
+1500cf5619920d9c88ea535d3ef3d2d1eb14ec53 assets\tutorial-mod\blockstates\pink_garnet_stairs.json
 8eca28967718980e1c125dc696239e4c8e195c76 assets\tutorial-mod\blockstates\pink_garnet_wall.json
 07f8c96f2968a05d9929c961c75e1afd2fe984d5 assets\tutorial-mod\models\block\raw_pink_garnet_block.json
 863808464c122f2323b722243dfd3d0b826c1e40 assets\tutorial-mod\models\block\pink_garnet_fence_gate_open.json
