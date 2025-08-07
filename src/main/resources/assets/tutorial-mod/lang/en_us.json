@@ -29,6 +29,8 @@
   "itemgroup.tutorial-mod.pink_garnet_items": "Pink Garnet Items",
   "itemgroup.tutorial-mod.pink_garnet_blocks": "Pink Garnet Blocks",
 
+  "itemgroup.tutorial-mod.pink_garnet_lamp": "Pink Garnet Lamp",
+
   "tooltip.tutorial-mod.magic_block.1": "Do you have too much garnet and want more diamonds?",
   "tooltip.tutorial-mod.magic_block.2": "Well do I have the §9magical block§r for you.",
   "tooltip.tutorial-mod.chisel.shift_down": "This item chisels blocks into bricks!",
