@@ -1,0 +1,8 @@
+{
+  "asset_id": "tutorial-mod:kaupen",
+  "decal": false,
+  "description": {
+    "translate": "trim_pattern.tutorial-mod.kaupen"
+  },
+  "template_item": "tutorial-mod:kaupen_armor_trim_smithing_template"
+}
