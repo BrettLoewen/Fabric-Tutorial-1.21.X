@@ -1,4 +1,4 @@
-// 1.21	2025-08-06T20:46:51.5110765	Tutorial Mod/Model Definitions
+// 1.21	2025-08-06T21:36:16.3798612	Tutorial Mod/Model Definitions
 b9ccd68386e9b137372d28d9568e2ba644f217f5 assets\tutorial-mod\blockstates\pink_garnet_ore.json
 9a344166ae863a765ef494f4548b8e6cde8ceddc assets\tutorial-mod\models\block\pink_garnet_door_bottom_right_open.json
 3f88ea5f7f7bc95712998c350b32baaa42719359 assets\tutorial-mod\blockstates\pink_garnet_block.json
@@ -24,15 +24,18 @@ da620612fe1fe90fb30fcb8f61ddd2bb2866eb28 assets\tutorial-mod\models\item\pink_ga
 07f8c96f2968a05d9929c961c75e1afd2fe984d5 assets\tutorial-mod\models\block\raw_pink_garnet_block.json
 863808464c122f2323b722243dfd3d0b826c1e40 assets\tutorial-mod\models\block\pink_garnet_fence_gate_open.json
 049c86bca7acaf981d8657bcf0ede2301cc01a4d assets\tutorial-mod\models\block\pink_garnet_fence_gate.json
+7ffa4ded35d9a21ab0a4d841137f73944244d707 assets\tutorial-mod\models\item\pink_garnet_pickaxe.json
 9684fe1662173240693f6134a3dd0ec44ec29ffb assets\tutorial-mod\models\item\pink_garnet_door.json
 4ff79c79d16a35488414e2031ed9e2221b6fabdd assets\tutorial-mod\models\block\pink_garnet_pressure_plate_down.json
 9374aef5c16e0828ac021f24aa5ab89185589d8a assets\tutorial-mod\blockstates\pink_garnet_slab.json
 6881f4067914d635dcc4810a554b3cdbee62f041 assets\tutorial-mod\models\block\pink_garnet_door_bottom_right.json
 e5fffe2dc9d742272ab38c8aa07d8baf22f51928 assets\tutorial-mod\models\block\pink_garnet_slab.json
+3301b428e419d3e5b55cab51dda1f48854dfc1cc assets\tutorial-mod\models\item\pink_garnet_shovel.json
 a69b48c132b064143a313c1e4a765ac13569523f assets\tutorial-mod\blockstates\pink_garnet_deepslate_ore.json
 ac482206ce1d40367c27c85c8e877c9ada42bfe6 assets\tutorial-mod\models\block\pink_garnet_trapdoor_bottom.json
 88af8ca8a284c79938e70df1375b6aa1075c23a9 assets\tutorial-mod\blockstates\pink_garnet_trapdoor.json
 a7bb5cfdd32227c56d7166ac9bbf0afd221ffdf3 assets\tutorial-mod\models\item\pink_garnet_ore.json
+a735f35446c1e5671683b5785f4c102e7667cd59 assets\tutorial-mod\models\item\pink_garnet_axe.json
 54df026f5582537b764965dc647c50dd8063b932 assets\tutorial-mod\models\block\pink_garnet_stairs_outer.json
 9a973333c811b21702b5fc3827d03d45891c44d6 assets\tutorial-mod\models\item\raw_pink_garnet_block.json
 73c2155caeffd13b6e44b9485c6cf9044e372296 assets\tutorial-mod\models\item\pink_garnet_deepslate_ore.json
@@ -50,6 +53,7 @@ f6bfa555ef970531a9b2db84b4f4b89ffa60eb55 assets\tutorial-mod\blockstates\pink_ga
 602acd3325e5767d4de63da6d818d123556779e9 assets\tutorial-mod\models\block\pink_garnet_button.json
 b36575d041749c9dd45dea08e574c5138299795b assets\tutorial-mod\models\block\pink_garnet_fence_gate_wall.json
 d572c5854db6485a756a064d9a4a1ff20ee8be8c assets\tutorial-mod\models\item\pink_garnet_lamp.json
+f80c36131eceea462247ae96ed84390366b21db0 assets\tutorial-mod\models\item\pink_garnet_hoe.json
 077be266ff5eb6cfa6ad91f852d5d8cafa44a0cb assets\tutorial-mod\models\item\pink_garnet_pressure_plate.json
 9ebdad9fdbe50b13cf00d7d4e4b4bfa9fd5c7a03 assets\tutorial-mod\models\block\pink_garnet_trapdoor_open.json
 8b3baa3c23bdd66feb5ae28235adc810ec482717 assets\tutorial-mod\models\block\magic_block.json
@@ -69,6 +73,7 @@ f8e25502f2caa28c5543522cf12d5f474db2c323 assets\tutorial-mod\models\item\pink_ga
 ab26345a5c7647486dae3edf0507cdf4efdbbf24 assets\tutorial-mod\models\block\pink_garnet_trapdoor_top.json
 2f6eb0910794d13887e571f9ca430200e7fafdab assets\tutorial-mod\models\block\pink_garnet_slab_top.json
 bfe0bed7aa89295e3c70e07c9866e5366fa856e5 assets\tutorial-mod\models\item\pink_garnet_fence_gate.json
+d0b16474f88bdebb923c66eff2f101c814a00826 assets\tutorial-mod\models\item\pink_garnet_sword.json
 2b4a27a8d37c5bc3a7d079252d14b314d6322a79 assets\tutorial-mod\models\block\pink_garnet_wall_side.json
 1039c0f5d00b15e0adb9818de615f18fcaa957ea assets\tutorial-mod\models\block\pink_garnet_ore.json
 7b058d55fa49e5b34d486127833f3f763826991b assets\tutorial-mod\models\block\pink_garnet_fence_side.json

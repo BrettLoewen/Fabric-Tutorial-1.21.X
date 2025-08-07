@@ -6,6 +6,7 @@ import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
 import net.supremetor.tutorialmod.block.ModBlocks;
 import net.supremetor.tutorialmod.item.ModItems;
+import net.supremetor.tutorialmod.util.ModTags;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -39,5 +40,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(BlockTags.WALLS)
                 .add(ModBlocks.PINK_GARNET_WALL);
+
+        getOrCreateTagBuilder(ModTags.Blocks.NEEDS_PINK_GARNET_TOOL)
+                .addTag(BlockTags.NEEDS_DIAMOND_TOOL);
     }
 }
