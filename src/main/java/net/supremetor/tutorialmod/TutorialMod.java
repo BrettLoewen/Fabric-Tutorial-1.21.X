@@ -4,6 +4,7 @@ import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.supremetor.tutorialmod.block.ModBlocks;
+import net.supremetor.tutorialmod.component.ModDataComponentTypes;
 import net.supremetor.tutorialmod.item.ModItemGroups;
 import net.supremetor.tutorialmod.item.ModItems;
 import org.slf4j.Logger;
@@ -20,8 +21,11 @@ public class TutorialMod implements ModInitializer {
 	@Override
 	public void onInitialize() {
         ModItemGroups.registerItemGroups();
+
         ModItems.registerModItems();
         ModBlocks.registerModBlocks();
+
+        ModDataComponentTypes.registerDataComponentTypes();
 
         FuelRegistry.INSTANCE.add(ModItems.STARLIGHT_ASHES, 20000);
 
