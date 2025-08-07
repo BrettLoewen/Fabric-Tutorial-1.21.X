@@ -10,6 +10,7 @@ import net.minecraft.util.Identifier;
 import net.supremetor.tutorialmod.TutorialMod;
 import net.supremetor.tutorialmod.item.custom.ChiselItem;
 import net.supremetor.tutorialmod.item.custom.HammerItem;
+import net.supremetor.tutorialmod.item.custom.ModArmorItem;
 
 import java.util.List;
 
@@ -49,8 +50,10 @@ public class ModItems {
             new HammerItem(ModToolMaterials.PINK_GARNET, new Item.Settings()
                     .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.PINK_GARNET, 7, 3.4f))));
 
+    // Define the Pink Garnet armor
+    // Only 1 piece of the set needs to be a ModArmorItem to activate the full armor effects
     public static final Item PINK_GARNET_HELMET = registerItem("pink_garnet_helmet",
-            new ArmorItem(ModArmorMaterials.PINK_GARNET_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings()
+            new ModArmorItem(ModArmorMaterials.PINK_GARNET_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings()
                     .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(15))));
     public static final Item PINK_GARNET_CHESTPLATE = registerItem("pink_garnet_chestplate",
             new ArmorItem(ModArmorMaterials.PINK_GARNET_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Settings()
