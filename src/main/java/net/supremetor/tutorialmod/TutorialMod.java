@@ -2,8 +2,16 @@ package net.supremetor.tutorialmod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.event.player.AttackEntityCallback;
 import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
+import net.minecraft.entity.effect.StatusEffectInstance;
+import net.minecraft.entity.effect.StatusEffects;
+import net.minecraft.entity.passive.SheepEntity;
+import net.minecraft.item.SwordItem;
+import net.minecraft.text.Text;
+import net.minecraft.util.ActionResult;
+import net.minecraft.util.Identifier;
 import net.supremetor.tutorialmod.block.ModBlocks;
 import net.supremetor.tutorialmod.component.ModDataComponentTypes;
 import net.supremetor.tutorialmod.item.ModItemGroups;
@@ -32,6 +40,19 @@ public class TutorialMod implements ModInitializer {
         FuelRegistry.INSTANCE.add(ModItems.STARLIGHT_ASHES, 20000);
 
         PlayerBlockBreakEvents.BEFORE.register(new HammerUsageEvent());
+        AttackEntityCallback.EVENT.register((playerEntity, world, hand, entity, entityHitResult) -> {
+            if(entity instanceof SheepEntity sheepEntity && !world.isClient()) {
+                if(playerEntity.getMainHandStack().getItem() instanceof SwordItem swordItem) {
+                    playerEntity.sendMessage(Text.literal("The Player just attacked a sheep with a sword"));
+                    playerEntity.getMainHandStack().decrement(1);
+                    sheepEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.SPEED, 1000, 6));
+                }
+
+                return ActionResult.PASS;
+            }
+
+            return ActionResult.PASS;
+        });
 
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.

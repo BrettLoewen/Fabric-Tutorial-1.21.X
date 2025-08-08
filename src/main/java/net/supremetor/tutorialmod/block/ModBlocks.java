@@ -5,7 +5,6 @@ import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
-import net.minecraft.loot.provider.number.UniformLootNumberProvider;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
@@ -14,6 +13,7 @@ import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.supremetor.tutorialmod.TutorialMod;
 import net.supremetor.tutorialmod.block.custom.MagicBlock;
 import net.supremetor.tutorialmod.block.custom.PinkGarnetLampBlock;
+import net.supremetor.tutorialmod.sound.ModSounds;
 
 public class ModBlocks {
 
@@ -41,7 +41,7 @@ public class ModBlocks {
     public static final Block MAGIC_BLOCK = registerBlock("magic_block",
             new MagicBlock(AbstractBlock.Settings.create().strength(4f)
                             .requiresTool()
-                            .sounds(BlockSoundGroup.DEEPSLATE)));
+                            .sounds(ModSounds.MAGIC_BLOCK_SOUNDS)));
 
 
     public static final Block PINK_GARNET_STAIRS = registerBlock("pink_garnet_stairs",

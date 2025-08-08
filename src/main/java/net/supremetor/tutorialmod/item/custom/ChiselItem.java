@@ -11,16 +11,15 @@ import net.minecraft.item.tooltip.TooltipType;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundCategory;
-import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.world.World;
 import net.supremetor.tutorialmod.block.ModBlocks;
 import net.supremetor.tutorialmod.component.ModDataComponentTypes;
+import net.supremetor.tutorialmod.sound.ModSounds;
 
 import java.util.List;
 import java.util.Map;
-import java.util.Scanner;
 
 public class ChiselItem extends Item {
     private static final Map<Block, Block> CHISEL_MAP =
@@ -47,7 +46,7 @@ public class ChiselItem extends Item {
                 context.getStack().damage(1, ((ServerWorld) world), ((ServerPlayerEntity) context.getPlayer()),
                         item -> context.getPlayer().sendEquipmentBreakStatus(item, EquipmentSlot.MAINHAND));
 
-                world.playSound(null, context.getBlockPos(), SoundEvents.BLOCK_GRINDSTONE_USE, SoundCategory.BLOCKS);
+                world.playSound(null, context.getBlockPos(), ModSounds.CHISEL_USE, SoundCategory.BLOCKS);
 
                 context.getStack().set(ModDataComponentTypes.COORDINATES, context.getBlockPos());
             }

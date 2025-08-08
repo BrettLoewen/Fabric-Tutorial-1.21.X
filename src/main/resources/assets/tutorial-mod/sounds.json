@@ -1,0 +1,32 @@
+{
+  "chisel_use": {
+    "sounds": [
+      "tutorial-mod:chisel_use"
+    ]
+  },
+  "magic_block_break": {
+    "sounds": [
+      "tutorial-mod:magic_block_break"
+    ]
+  },
+  "magic_block_step": {
+    "sounds": [
+      "tutorial-mod:magic_block_step"
+    ]
+  },
+  "magic_block_place": {
+    "sounds": [
+      "tutorial-mod:magic_block_place"
+    ]
+  },
+  "magic_block_hit": {
+    "sounds": [
+      "tutorial-mod:magic_block_hit"
+    ]
+  },
+  "magic_block_fall": {
+    "sounds": [
+      "tutorial-mod:magic_block_fall"
+    ]
+  }
+}
