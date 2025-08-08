@@ -1,4 +1,4 @@
-// 1.21	2025-08-07T16:35:00.0291971	Tutorial Mod/Model Definitions
+// 1.21	2025-08-08T14:01:21.3401847	Tutorial Mod/Model Definitions
 9a344166ae863a765ef494f4548b8e6cde8ceddc assets\tutorial-mod\models\block\pink_garnet_door_bottom_right_open.json
 4edf258b9944c633a09d0ffeee9243e0866b0216 assets\tutorial-mod\models\item\pink_garnet_chestplate_lapis_trim.json
 49a22a080df5d8175478c52820761c0dfd7097c4 assets\tutorial-mod\models\item\pink_garnet_helmet_iron_trim.json
@@ -103,15 +103,14 @@ f6fe2cbf47436fa94cafae5a1f8c7f57887d7952 assets\tutorial-mod\models\item\pink_ga
 7ca2b997e0fd62a07160a3078d029dba3c9b42a2 assets\tutorial-mod\models\item\pink_garnet_boots_redstone_trim.json
 19cb6ff55f5d7a42f9dd44e99e0ff6e281bca17d assets\tutorial-mod\models\item\pink_garnet_leggings.json
 5cec901f78c5910bfb3fa9176fa9dc5bc52442cb assets\tutorial-mod\models\item\pink_garnet_leggings_copper_trim.json
-48531b7af7e5cec876682a5052eb4a02b568ee9c assets\tutorial-mod\models\item\pink_garnet_leggings_gold_trim.json
 f80c36131eceea462247ae96ed84390366b21db0 assets\tutorial-mod\models\item\pink_garnet_hoe.json
 d572c5854db6485a756a064d9a4a1ff20ee8be8c assets\tutorial-mod\models\item\pink_garnet_lamp.json
+48531b7af7e5cec876682a5052eb4a02b568ee9c assets\tutorial-mod\models\item\pink_garnet_leggings_gold_trim.json
 077be266ff5eb6cfa6ad91f852d5d8cafa44a0cb assets\tutorial-mod\models\item\pink_garnet_pressure_plate.json
 9ebdad9fdbe50b13cf00d7d4e4b4bfa9fd5c7a03 assets\tutorial-mod\models\block\pink_garnet_trapdoor_open.json
 1ec8401c6eb919729e2fd465c1abc3cb6f47d756 assets\tutorial-mod\models\item\pink_garnet_helmet_redstone_trim.json
 8b3baa3c23bdd66feb5ae28235adc810ec482717 assets\tutorial-mod\models\block\magic_block.json
 a0ea75910ed2e39013d7cf16c7202db386270361 assets\tutorial-mod\models\item\raw_pink_garnet.json
-613feb221a7ddb0e96600c25369e175912167b23 assets\tutorial-mod\models\item\chisel.json
 f6666ce7695d5902239c0f25907bba24cf47b514 assets\tutorial-mod\models\item\pink_garnet_boots_emerald_trim.json
 4f731dcaa8e885801f79757ee0fc1b3c56d55c37 assets\tutorial-mod\models\item\pink_garnet_leggings_lapis_trim.json
 4814f9002f354b186b86a130fe3b324b66d804cb assets\tutorial-mod\models\item\pink_garnet_helmet_gold_trim.json
