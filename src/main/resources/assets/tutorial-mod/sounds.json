@@ -28,5 +28,13 @@
     "sounds": [
       "tutorial-mod:magic_block_fall"
     ]
+  },
+  "bar_brawl": {
+    "sounds": [
+      {
+        "name": "tutorial-mod:bar_brawl",
+        "stream": true
+      }
+    ]
   }
 }

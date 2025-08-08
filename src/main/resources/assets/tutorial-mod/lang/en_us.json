@@ -1,4 +1,6 @@
 {
+  "effect.tutorial-mod.slimey": "Slimey",
+
   "item.tutorial-mod.pink_garnet": "Pink Garnet",
   "item.tutorial-mod.raw_pink_garnet": "Raw Pink Garnet",
   "item.tutorial-mod.chisel": "Chisel",
@@ -23,6 +25,13 @@
   "item.tutorial-mod.kaupen_armor_trim_smithing_template": "Kaupen Smithing Template",
 
   "item.tutorial-mod.kaupen_bow": "Kaupen Bow",
+
+  "item.tutorial-mod.bar_brawl_music_disc": "Bar Brawl Music Disc",
+  "item.tutorial-mod.bar_brawl_music_disc.desc": "Bryan Tech - Bar Brawl (CC0)",
+
+  "item.minecraft.potion.effect.slimey_potion": "Slimey Potion",
+  "item.minecraft.splash_potion.effect.slimey_potion": "Slimey Splash Potion",
+  "item.minecraft.lingering_potion.effect.slimey_potion": "Slimey Lingering Potion",
 
   "block.tutorial-mod.pink_garnet_block": "Block of Pink Garnet",
   "block.tutorial-mod.raw_pink_garnet_block": "Block of Raw Pink Garnet",
@@ -49,6 +58,13 @@
   "itemgroup.tutorial-mod.pink_garnet_blocks": "Pink Garnet Blocks",
 
   "itemgroup.tutorial-mod.pink_garnet_lamp": "Pink Garnet Lamp",
+
+  "painting.tutorial-mod.world.title": "World",
+  "painting.tutorial-mod.world.author": "NanoAttack",
+  "painting.tutorial-mod.shrimp.title": "Shrimp",
+  "painting.tutorial-mod.shrimp.author": "NanoAttack",
+  "painting.tutorial-mod.saw_them.title": "Saw Them",
+  "painting.tutorial-mod.saw_them.author": "NanoAttack",
 
   "tooltip.tutorial-mod.magic_block.1": "Do you have too much garnet and want more diamonds?",
   "tooltip.tutorial-mod.magic_block.2": "Well do I have the §9magical block§r for you.",
