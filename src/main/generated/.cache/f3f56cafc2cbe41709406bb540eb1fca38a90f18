@@ -1,6 +1,6 @@
-// 1.21	2025-08-08T15:19:01.6475044	Tutorial Mod/Tags for minecraft:item
-5e11a0ae6006e2571d3592a676baecb5b42b323a data\minecraft\tags\item\trim_materials.json
+// 1.21	2025-08-09T15:19:44.4869798	Tutorial Mod/Tags for minecraft:item
 c6eef048482a23189de8dd68b6eb58176fb84216 data\tutorial-mod\tags\item\transformable_items.json
+5e11a0ae6006e2571d3592a676baecb5b42b323a data\minecraft\tags\item\trim_materials.json
 a42fa1a707797da2637835f682adcf7b345729b6 data\minecraft\tags\item\enchantable\chest_armor.json
 521b391a1fd03b7329a5f7066dc451f52efa2dfc data\minecraft\tags\item\shovels.json
 4090f3158f30e578dc7e68ea92e9020283f590ed data\minecraft\tags\item\axes.json

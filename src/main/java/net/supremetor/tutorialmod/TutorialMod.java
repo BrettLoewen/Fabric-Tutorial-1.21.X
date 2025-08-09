@@ -14,10 +14,10 @@ import net.minecraft.item.SwordItem;
 import net.minecraft.potion.Potions;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
-import net.minecraft.util.Identifier;
 import net.supremetor.tutorialmod.block.ModBlocks;
 import net.supremetor.tutorialmod.component.ModDataComponentTypes;
 import net.supremetor.tutorialmod.effect.ModEffects;
+import net.supremetor.tutorialmod.enchantment.ModEnchantmentEffects;
 import net.supremetor.tutorialmod.item.ModItemGroups;
 import net.supremetor.tutorialmod.item.ModItems;
 import net.supremetor.tutorialmod.potion.ModPotions;
@@ -43,6 +43,7 @@ public class TutorialMod implements ModInitializer {
         ModSounds.registerSounds();
         ModEffects.registerEffects();
         ModPotions.registerPotions();
+        ModEnchantmentEffects.registerEnchantmentEffects();
 
         FuelRegistry.INSTANCE.add(ModItems.STARLIGHT_ASHES, 20000);
 
