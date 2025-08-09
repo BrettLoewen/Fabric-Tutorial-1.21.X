@@ -13,6 +13,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.supremetor.tutorialmod.TutorialMod;
 import net.supremetor.tutorialmod.block.custom.CauliflowerCropBlock;
+import net.supremetor.tutorialmod.block.custom.HoneyBerryBushBlock;
 import net.supremetor.tutorialmod.block.custom.MagicBlock;
 import net.supremetor.tutorialmod.block.custom.PinkGarnetLampBlock;
 import net.supremetor.tutorialmod.sound.ModSounds;
@@ -81,6 +82,9 @@ public class ModBlocks {
                     .sounds(BlockSoundGroup.CROP)
                     .pistonBehavior(PistonBehavior.DESTROY)
                     .mapColor(MapColor.DARK_GREEN)));
+
+    public static final Block HONEY_BERRY_BUSH = registerBlockWithoutBlockItem("honey_berry_bush",
+            new HoneyBerryBushBlock(AbstractBlock.Settings.copy(Blocks.SWEET_BERRY_BUSH)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

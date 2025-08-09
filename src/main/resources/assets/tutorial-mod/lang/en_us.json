@@ -32,6 +32,7 @@
   "item.tutorial-mod.bar_brawl_music_disc.desc": "Bryan Tech - Bar Brawl (CC0)",
 
   "item.tutorial-mod.cauliflower_seeds": "Cauliflower Seeds",
+  "item.tutorial-mod.honey_berries": "Honey Berries",
 
   "item.minecraft.potion.effect.slimey_potion": "Slimey Potion",
   "item.minecraft.splash_potion.effect.slimey_potion": "Slimey Splash Potion",
@@ -59,6 +60,7 @@
   "block.tutorial-mod.pink_garnet_trapdoor": "Pink Garnet Trapdoor",
 
   "block.tutorial-mod.cauliflower_crop": "Cauliflower Crop",
+  "block.tutorial-mod.honey_berry_bush": "Honey Berry Bush",
 
   "itemgroup.tutorial-mod.pink_garnet_items": "Pink Garnet Items",
   "itemgroup.tutorial-mod.pink_garnet_blocks": "Pink Garnet Blocks",
