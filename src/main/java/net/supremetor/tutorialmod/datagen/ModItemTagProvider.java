@@ -3,7 +3,9 @@ package net.supremetor.tutorialmod.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.registry.RegistryWrapper;
+import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.registry.tag.ItemTags;
+import net.supremetor.tutorialmod.block.ModBlocks;
 import net.supremetor.tutorialmod.item.ModItems;
 import net.supremetor.tutorialmod.util.ModTags;
 
@@ -54,5 +56,15 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
 
         getOrCreateTagBuilder(ItemTags.BOW_ENCHANTABLE)
                 .add(ModItems.KAUPEN_BOW);
+
+
+        getOrCreateTagBuilder(ItemTags.LOGS_THAT_BURN)
+                .add(ModBlocks.DRIFTWOOD_LOG.asItem())
+                .add(ModBlocks.DRIFTWOOD_WOOD.asItem())
+                .add(ModBlocks.STRIPPED_DRIFTWOOD_LOG.asItem())
+                .add(ModBlocks.STRIPPED_DRIFTWOOD_WOOD.asItem());
+
+        getOrCreateTagBuilder(ItemTags.PLANKS)
+                .add(ModBlocks.DRIFTWOOD_PLANKS.asItem());
     }
 }

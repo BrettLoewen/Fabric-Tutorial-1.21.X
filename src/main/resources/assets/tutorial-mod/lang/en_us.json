@@ -62,6 +62,14 @@
   "block.tutorial-mod.cauliflower_crop": "Cauliflower Crop",
   "block.tutorial-mod.honey_berry_bush": "Honey Berry Bush",
 
+  "block.tutorial-mod.driftwood_log": "Driftwood Log",
+  "block.tutorial-mod.driftwood_wood": "Driftwood Wood",
+  "block.tutorial-mod.stripped_driftwood_log": "Stripped Driftwood Log",
+  "block.tutorial-mod.stripped_driftwood_wood": "Stripped Driftwood Wood",
+  "block.tutorial-mod.driftwood_planks": "Driftwood Planks",
+  "block.tutorial-mod.driftwood_leaves": "Driftwood Leaves",
+  "block.tutorial-mod.driftwood_sapling": "Driftwood Sapling",
+
   "itemgroup.tutorial-mod.pink_garnet_items": "Pink Garnet Items",
   "itemgroup.tutorial-mod.pink_garnet_blocks": "Pink Garnet Blocks",
 
