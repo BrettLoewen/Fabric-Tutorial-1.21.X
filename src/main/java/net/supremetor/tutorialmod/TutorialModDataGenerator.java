@@ -8,6 +8,8 @@ import net.supremetor.tutorialmod.datagen.*;
 import net.supremetor.tutorialmod.enchantment.ModEnchantments;
 import net.supremetor.tutorialmod.trim.ModTrimMaterials;
 import net.supremetor.tutorialmod.trim.ModTrimPatterns;
+import net.supremetor.tutorialmod.world.ModConfiguredFeatures;
+import net.supremetor.tutorialmod.world.ModPlacedFeatures;
 
 public class TutorialModDataGenerator implements DataGeneratorEntrypoint {
 	@Override
@@ -27,5 +29,7 @@ public class TutorialModDataGenerator implements DataGeneratorEntrypoint {
         registryBuilder.addRegistry(RegistryKeys.TRIM_MATERIAL, ModTrimMaterials::bootstrap);
         registryBuilder.addRegistry(RegistryKeys.TRIM_PATTERN, ModTrimPatterns::bootstrap);
         registryBuilder.addRegistry(RegistryKeys.ENCHANTMENT, ModEnchantments::bootstrap);
+        registryBuilder.addRegistry(RegistryKeys.CONFIGURED_FEATURE, ModConfiguredFeatures::bootstrap);
+        registryBuilder.addRegistry(RegistryKeys.PLACED_FEATURE, ModPlacedFeatures::bootstrap);
     }
 }

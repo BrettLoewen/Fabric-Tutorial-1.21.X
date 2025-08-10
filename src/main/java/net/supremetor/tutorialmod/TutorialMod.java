@@ -24,6 +24,7 @@ import net.supremetor.tutorialmod.item.ModItems;
 import net.supremetor.tutorialmod.potion.ModPotions;
 import net.supremetor.tutorialmod.sound.ModSounds;
 import net.supremetor.tutorialmod.util.HammerUsageEvent;
+import net.supremetor.tutorialmod.world.gen.ModWorldGeneration;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -45,6 +46,7 @@ public class TutorialMod implements ModInitializer {
         ModEffects.registerEffects();
         ModPotions.registerPotions();
         ModEnchantmentEffects.registerEnchantmentEffects();
+        ModWorldGeneration.generateModWorldGen();
 
         FuelRegistry.INSTANCE.add(ModItems.STARLIGHT_ASHES, 20000);
 
