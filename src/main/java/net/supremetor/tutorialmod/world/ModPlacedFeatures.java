@@ -1,5 +1,7 @@
 package net.supremetor.tutorialmod.world;
 
+import net.minecraft.world.gen.YOffset;
+import net.minecraft.world.gen.placementmodifier.HeightRangePlacementModifier;
 import net.supremetor.tutorialmod.TutorialMod;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;
@@ -15,10 +17,13 @@ import net.minecraft.world.gen.placementmodifier.PlacementModifier;
 import java.util.List;
 
 public class ModPlacedFeatures {
+    public static final RegistryKey<PlacedFeature> PINK_GARNET_ORE_PLACED_KEY = registerKey("pink_garnet_ore_placed");
 
     public static void bootstrap(Registerable<PlacedFeature> context) {
         var configuredFeatures = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
 
+        register(context, PINK_GARNET_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.PINK_GARNET_ORE_KEY),
+                ModOrePlacement.modifiersWithCount(14, HeightRangePlacementModifier.uniform(YOffset.fixed(-80), YOffset.fixed(80))));
     }
 
     public static RegistryKey<PlacedFeature> registerKey(String name) {
