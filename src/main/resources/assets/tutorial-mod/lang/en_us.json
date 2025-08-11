@@ -3,6 +3,8 @@
 
   "enchantment.tutorial-mod.lightning_striker": "Lightning Striker",
 
+  "entity.tutorial-mod.mantis": "Mantis",
+
   "item.tutorial-mod.pink_garnet": "Pink Garnet",
   "item.tutorial-mod.raw_pink_garnet": "Raw Pink Garnet",
   "item.tutorial-mod.chisel": "Chisel",
@@ -33,6 +35,8 @@
 
   "item.tutorial-mod.cauliflower_seeds": "Cauliflower Seeds",
   "item.tutorial-mod.honey_berries": "Honey Berries",
+
+  "item.tutorial-mod.mantis_spawn_egg": "Mantis Spawn Egg",
 
   "item.minecraft.potion.effect.slimey_potion": "Slimey Potion",
   "item.minecraft.splash_potion.effect.slimey_potion": "Slimey Splash Potion",

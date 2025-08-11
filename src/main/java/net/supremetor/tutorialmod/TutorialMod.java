@@ -4,6 +4,7 @@ import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.event.player.AttackEntityCallback;
 import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
+import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.fabricmc.fabric.api.registry.*;
 import net.minecraft.block.AbstractFireBlock;
 import net.minecraft.block.FireBlock;
@@ -19,6 +20,8 @@ import net.supremetor.tutorialmod.block.ModBlocks;
 import net.supremetor.tutorialmod.component.ModDataComponentTypes;
 import net.supremetor.tutorialmod.effect.ModEffects;
 import net.supremetor.tutorialmod.enchantment.ModEnchantmentEffects;
+import net.supremetor.tutorialmod.entity.ModEntities;
+import net.supremetor.tutorialmod.entity.custom.MantisEntity;
 import net.supremetor.tutorialmod.item.ModItemGroups;
 import net.supremetor.tutorialmod.item.ModItems;
 import net.supremetor.tutorialmod.potion.ModPotions;
@@ -82,6 +85,8 @@ public class TutorialMod implements ModInitializer {
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_DRIFTWOOD_WOOD, 5, 5);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DRIFTWOOD_PLANKS, 5, 5);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DRIFTWOOD_LEAVES, 30, 60);
+
+        FabricDefaultAttributeRegistry.register(ModEntities.MANTIS, MantisEntity.createAttributes());
 
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.

@@ -1,4 +1,4 @@
-// 1.21	2025-08-10T15:55:19.7655536	Tutorial Mod/Model Definitions
+// 1.21	2025-08-11T14:07:06.3425352	Tutorial Mod/Model Definitions
 9a344166ae863a765ef494f4548b8e6cde8ceddc assets\tutorial-mod\models\block\pink_garnet_door_bottom_right_open.json
 67cab35ef234e28665cef683dd424245d78c55c8 assets\tutorial-mod\blockstates\driftwood_sapling.json
 4edf258b9944c633a09d0ffeee9243e0866b0216 assets\tutorial-mod\models\item\pink_garnet_chestplate_lapis_trim.json
@@ -19,9 +19,9 @@ e7879927dc2cee9b119f7359deb62c7bc01ab7d7 assets\tutorial-mod\models\item\pink_ga
 863808464c122f2323b722243dfd3d0b826c1e40 assets\tutorial-mod\models\block\pink_garnet_fence_gate_open.json
 07f8c96f2968a05d9929c961c75e1afd2fe984d5 assets\tutorial-mod\models\block\raw_pink_garnet_block.json
 049c86bca7acaf981d8657bcf0ede2301cc01a4d assets\tutorial-mod\models\block\pink_garnet_fence_gate.json
-97369f727782b2daf2c5b99908ca3f0be1171f7c assets\tutorial-mod\models\item\pink_garnet_boots_diamond_trim.json
-9684fe1662173240693f6134a3dd0ec44ec29ffb assets\tutorial-mod\models\item\pink_garnet_door.json
 4ff79c79d16a35488414e2031ed9e2221b6fabdd assets\tutorial-mod\models\block\pink_garnet_pressure_plate_down.json
+9684fe1662173240693f6134a3dd0ec44ec29ffb assets\tutorial-mod\models\item\pink_garnet_door.json
+97369f727782b2daf2c5b99908ca3f0be1171f7c assets\tutorial-mod\models\item\pink_garnet_boots_diamond_trim.json
 9374aef5c16e0828ac021f24aa5ab89185589d8a assets\tutorial-mod\blockstates\pink_garnet_slab.json
 5c0afff2921f4456bcb9705930c07857383301f5 assets\tutorial-mod\models\item\pink_garnet_boots_lapis_trim.json
 6881f4067914d635dcc4810a554b3cdbee62f041 assets\tutorial-mod\models\block\pink_garnet_door_bottom_right.json
@@ -60,8 +60,8 @@ fe1b1b17654e269dfe0bc965a8625523ee27e9fe assets\tutorial-mod\models\item\pink_ga
 64e54a9199dcbbaf4548200718cc8b4667d8833c assets\tutorial-mod\models\item\pink_garnet_chestplate_netherite_trim.json
 e431eb20c40e21e1b6bd6365b5da21fcf966c211 assets\tutorial-mod\blockstates\stripped_driftwood_wood.json
 d51ae187104ca9f428712943de1242245882d07a assets\tutorial-mod\models\item\pink_garnet_helmet.json
-2ad6912ea559e14dc959c47d670bfad1c2d19324 assets\tutorial-mod\models\item\pink_garnet_leggings_redstone_trim.json
 c050e3c2b028f1d32091487c037b65f42ee5cd75 assets\tutorial-mod\models\item\pink_garnet_block.json
+2ad6912ea559e14dc959c47d670bfad1c2d19324 assets\tutorial-mod\models\item\pink_garnet_leggings_redstone_trim.json
 4887978b0e41419dceb7f48a7cf09770948c76ea assets\tutorial-mod\models\item\pink_garnet_boots.json
 95a6f66122b010b6683f29e209183f9f6c68c2b6 assets\tutorial-mod\blockstates\driftwood_leaves.json
 f8e25502f2caa28c5543522cf12d5f474db2c323 assets\tutorial-mod\models\item\pink_garnet_slab.json
@@ -118,6 +118,7 @@ a7bb5cfdd32227c56d7166ac9bbf0afd221ffdf3 assets\tutorial-mod\models\item\pink_ga
 9a973333c811b21702b5fc3827d03d45891c44d6 assets\tutorial-mod\models\item\raw_pink_garnet_block.json
 b71e2173cfb086cdfa27c3248812ff5043b63b8b assets\tutorial-mod\models\item\pink_garnet_boots_quartz_trim.json
 071990e7e7e408c3bdbb071722989f6ede7662cc assets\tutorial-mod\models\item\honey_berries.json
+63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets\tutorial-mod\models\item\mantis_spawn_egg.json
 014c56183bbfc4347421d108084f7136fb64b902 assets\tutorial-mod\models\block\pink_garnet_door_top_left.json
 98776e313024a7b066c7d1f04522b9db3026af51 assets\tutorial-mod\models\block\pink_garnet_button_pressed.json
 3d362a5797de6f0636aa11ab825378ad3ce63ac7 assets\tutorial-mod\models\block\pink_garnet_wall_inventory.json
@@ -126,8 +127,8 @@ c42f04e7bd59c25fa18b8d131c9b607f5ad592c4 assets\tutorial-mod\models\block\pink_g
 6e43a0c1caa14b31944f64d76da2fe9370c3f4b5 assets\tutorial-mod\models\item\pink_garnet_chestplate_quartz_trim.json
 3c436cb6afe6f6216cf7e94f6cc36e7eaa6d0eb3 assets\tutorial-mod\models\item\pink_garnet_chestplate_redstone_trim.json
 778920fbd8024c96b1ca180fb15478eeb655a8eb assets\tutorial-mod\models\block\pink_garnet_door_bottom_left_open.json
-925728b6866c8b1bd3b04dcdcec76f30e23fc2ee assets\tutorial-mod\models\block\pink_garnet_fence_post.json
 c0f6c0d36aedaf795963656b7ca8fc77a1d883dc assets\tutorial-mod\models\block\pink_garnet_stairs.json
+925728b6866c8b1bd3b04dcdcec76f30e23fc2ee assets\tutorial-mod\models\block\pink_garnet_fence_post.json
 f6fe2cbf47436fa94cafae5a1f8c7f57887d7952 assets\tutorial-mod\models\item\pink_garnet_chestplate.json
 7ca2b997e0fd62a07160a3078d029dba3c9b42a2 assets\tutorial-mod\models\item\pink_garnet_boots_redstone_trim.json
 19cb6ff55f5d7a42f9dd44e99e0ff6e281bca17d assets\tutorial-mod\models\item\pink_garnet_leggings.json

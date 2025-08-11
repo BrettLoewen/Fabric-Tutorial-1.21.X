@@ -1,4 +1,4 @@
-// 1.21	2025-08-10T15:55:19.7615538	Tutorial Mod/Tags for minecraft:item
+// 1.21	2025-08-11T14:07:06.3395355	Tutorial Mod/Tags for minecraft:item
 c6eef048482a23189de8dd68b6eb58176fb84216 data\tutorial-mod\tags\item\transformable_items.json
 5e11a0ae6006e2571d3592a676baecb5b42b323a data\minecraft\tags\item\trim_materials.json
 a42fa1a707797da2637835f682adcf7b345729b6 data\minecraft\tags\item\enchantable\chest_armor.json
@@ -7,8 +7,8 @@ a42fa1a707797da2637835f682adcf7b345729b6 data\minecraft\tags\item\enchantable\ch
 1eff71797dc2521e7d1f57e236a5b560e19bded6 data\minecraft\tags\item\logs_that_burn.json
 37ffc6b963dfaf0e7d7a17613d8ea0b3b6b32ff8 data\minecraft\tags\item\pickaxes.json
 e7c3af7e92e675ed331a32ceff78f1fb06f4cc6a data\minecraft\tags\item\hoes.json
-fdddcf097420b1236862417cda4658868acbff97 data\minecraft\tags\item\trimmable_armor.json
 a10ed7d2c3c5fba668b9f8f7fd6890048bb55555 data\minecraft\tags\item\enchantable\head_armor.json
+fdddcf097420b1236862417cda4658868acbff97 data\minecraft\tags\item\trimmable_armor.json
 ffb05c273aadd5957c6a583904b567b142bacc24 data\minecraft\tags\item\swords.json
 4c76e68180e635aca97ea94c5faf8c891b295ced data\minecraft\tags\item\enchantable\bow.json
 ec022c094af930b1fb0b0c7ee8d016aded0b30ec data\minecraft\tags\item\trim_templates.json

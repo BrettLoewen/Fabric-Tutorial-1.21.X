@@ -11,6 +11,8 @@ import net.supremetor.tutorialmod.block.custom.HoneyBerryBushBlock;
 import net.supremetor.tutorialmod.block.custom.PinkGarnetLampBlock;
 import net.supremetor.tutorialmod.item.ModItems;
 
+import java.util.Optional;
+
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricDataOutput output) {
         super(output);
@@ -85,5 +87,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.BAR_BRAWL_MUSIC_DISC, Models.GENERATED);
 
         itemModelGenerator.register(ModBlocks.DRIFTWOOD_SAPLING.asItem(), Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.MANTIS_SPAWN_EGG,
+                new Model(Optional.of(Identifier.of("item/template_spawn_egg")), Optional.empty()));
     }
 }

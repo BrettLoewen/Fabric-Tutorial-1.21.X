@@ -1,4 +1,4 @@
-// 1.21	2025-08-10T15:55:19.7625545	Tutorial Mod/Block Loot Tables
+// 1.21	2025-08-11T14:07:06.3405348	Tutorial Mod/Block Loot Tables
 6f5b1dda7346bed7cee21ac9dcde545d62334573 data\tutorial-mod\loot_table\blocks\pink_garnet_block.json
 df78b59a040e73d089b4864dd52af362c58294da data\tutorial-mod\loot_table\blocks\pink_garnet_stairs.json
 9b3fc109085fe45e78e67c0fc62be2d41ca06c0a data\tutorial-mod\loot_table\blocks\cauliflower_crop.json
@@ -17,8 +17,8 @@ ad65e1e7a91a1f1c7d02bdb54dd825431bd68a77 data\tutorial-mod\loot_table\blocks\pin
 3c711ca95522dc1122e918ad2f26239ddd274975 data\tutorial-mod\loot_table\blocks\pink_garnet_fence_gate.json
 1cdf7780f74bf7005e6733512da8043bb1ad78f9 data\tutorial-mod\loot_table\blocks\pink_garnet_trapdoor.json
 24659e9383cab150d48ac2ba16fe431a27104bb8 data\tutorial-mod\loot_table\blocks\driftwood_sapling.json
-1ee1d36b92b5a5c20c3c86941b745e7ef16e5748 data\tutorial-mod\loot_table\blocks\pink_garnet_door.json
 4ffd41ff8e16617d38085b44d358f87f18fcbf69 data\tutorial-mod\loot_table\blocks\driftwood_wood.json
+1ee1d36b92b5a5c20c3c86941b745e7ef16e5748 data\tutorial-mod\loot_table\blocks\pink_garnet_door.json
 fe31e4f8ae483029b21d48224996804126a0d9c5 data\tutorial-mod\loot_table\blocks\pink_garnet_wall.json
 ab74e081f027ffe02b626f8af8a74b8230d142ac data\tutorial-mod\loot_table\blocks\pink_garnet_button.json
 04f7dddfb1972c6d4f445827f0dbf7844a49e5d6 data\tutorial-mod\loot_table\blocks\honey_berry_bush.json
