@@ -4,6 +4,7 @@
   "enchantment.tutorial-mod.lightning_striker": "Lightning Striker",
 
   "entity.tutorial-mod.mantis": "Mantis",
+  "entity.tutorial-mod.tomahawk": "Tomahawk",
 
   "item.tutorial-mod.pink_garnet": "Pink Garnet",
   "item.tutorial-mod.raw_pink_garnet": "Raw Pink Garnet",
@@ -37,6 +38,8 @@
   "item.tutorial-mod.honey_berries": "Honey Berries",
 
   "item.tutorial-mod.mantis_spawn_egg": "Mantis Spawn Egg",
+
+  "item.tutorial-mod.tomahawk": "Tomahawk",
 
   "item.minecraft.potion.effect.slimey_potion": "Slimey Potion",
   "item.minecraft.splash_potion.effect.slimey_potion": "Slimey Splash Potion",

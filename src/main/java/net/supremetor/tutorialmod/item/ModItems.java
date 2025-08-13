@@ -14,6 +14,7 @@ import net.supremetor.tutorialmod.entity.ModEntities;
 import net.supremetor.tutorialmod.item.custom.ChiselItem;
 import net.supremetor.tutorialmod.item.custom.HammerItem;
 import net.supremetor.tutorialmod.item.custom.ModArmorItem;
+import net.supremetor.tutorialmod.item.custom.TomahawkItem;
 import net.supremetor.tutorialmod.sound.ModSounds;
 
 import java.util.List;
@@ -89,6 +90,9 @@ public class ModItems {
 
     public static final Item MANTIS_SPAWN_EGG = registerItem("mantis_spawn_egg",
             new SpawnEggItem(ModEntities.MANTIS, 0x9dc783, 0xbfaf8f, new Item.Settings()));
+
+    public static final Item TOMAHAWK = registerItem("tomahawk",
+            new TomahawkItem(new Item.Settings().maxCount(16)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(TutorialMod.MOD_ID, name), item);

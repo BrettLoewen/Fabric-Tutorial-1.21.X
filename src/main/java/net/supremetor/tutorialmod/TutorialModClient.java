@@ -9,6 +9,8 @@ import net.supremetor.tutorialmod.block.ModBlocks;
 import net.supremetor.tutorialmod.entity.ModEntities;
 import net.supremetor.tutorialmod.entity.client.MantisModel;
 import net.supremetor.tutorialmod.entity.client.MantisRenderer;
+import net.supremetor.tutorialmod.entity.client.TomahawkProjectileModel;
+import net.supremetor.tutorialmod.entity.client.TomahawkProjectileRenderer;
 import net.supremetor.tutorialmod.util.ModModelPredicates;
 
 public class TutorialModClient implements ClientModInitializer {
@@ -24,5 +26,8 @@ public class TutorialModClient implements ClientModInitializer {
 
         EntityModelLayerRegistry.registerModelLayer(MantisModel.MANTIS, MantisModel::getTexturedModelData);
         EntityRendererRegistry.register(ModEntities.MANTIS, MantisRenderer::new);
+
+        EntityModelLayerRegistry.registerModelLayer(TomahawkProjectileModel.TOMAHAWK, TomahawkProjectileModel::getTexturedModelData);
+        EntityRendererRegistry.register(ModEntities.TOMAHAWK, TomahawkProjectileRenderer::new);
     }
 }
