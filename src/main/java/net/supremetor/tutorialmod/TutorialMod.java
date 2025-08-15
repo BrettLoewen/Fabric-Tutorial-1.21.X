@@ -6,8 +6,6 @@ import net.fabricmc.fabric.api.event.player.AttackEntityCallback;
 import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.fabricmc.fabric.api.registry.*;
-import net.minecraft.block.AbstractFireBlock;
-import net.minecraft.block.FireBlock;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.passive.SheepEntity;
@@ -27,6 +25,7 @@ import net.supremetor.tutorialmod.item.ModItems;
 import net.supremetor.tutorialmod.potion.ModPotions;
 import net.supremetor.tutorialmod.sound.ModSounds;
 import net.supremetor.tutorialmod.util.HammerUsageEvent;
+import net.supremetor.tutorialmod.villager.ModVillagers;
 import net.supremetor.tutorialmod.world.gen.ModWorldGeneration;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -50,6 +49,8 @@ public class TutorialMod implements ModInitializer {
         ModPotions.registerPotions();
         ModEnchantmentEffects.registerEnchantmentEffects();
         ModWorldGeneration.generateModWorldGen();
+        ModVillagers.registerVillagers();
+        ModVillagers.registerTradeOffers();
 
         FuelRegistry.INSTANCE.add(ModItems.STARLIGHT_ASHES, 20000);
 
