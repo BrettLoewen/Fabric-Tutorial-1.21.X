@@ -52,6 +52,8 @@ public class ModItemGroups {
                         entries.add(ModItems.MANTIS_SPAWN_EGG);
 
                         entries.add(ModItems.TOMAHAWK);
+
+                        entries.add(ModItems.SPECTRE_STAFF);
                     }).build());
 
     public static final ItemGroup PINK_GARNET_BLOCKS_GROUP =
