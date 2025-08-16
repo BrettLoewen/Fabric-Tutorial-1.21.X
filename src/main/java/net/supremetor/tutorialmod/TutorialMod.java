@@ -26,6 +26,7 @@ import net.supremetor.tutorialmod.particle.ModParticles;
 import net.supremetor.tutorialmod.potion.ModPotions;
 import net.supremetor.tutorialmod.sound.ModSounds;
 import net.supremetor.tutorialmod.util.HammerUsageEvent;
+import net.supremetor.tutorialmod.util.ModLootTableModifiers;
 import net.supremetor.tutorialmod.villager.ModVillagers;
 import net.supremetor.tutorialmod.world.gen.ModWorldGeneration;
 import org.slf4j.Logger;
@@ -53,6 +54,7 @@ public class TutorialMod implements ModInitializer {
         ModVillagers.registerVillagers();
         ModVillagers.registerTradeOffers();
         ModParticles.registerParticles();
+        ModLootTableModifiers.modifyLootTables();
 
         FuelRegistry.INSTANCE.add(ModItems.STARLIGHT_ASHES, 20000);
 
