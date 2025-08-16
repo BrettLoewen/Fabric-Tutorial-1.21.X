@@ -15,6 +15,7 @@ import net.minecraft.potion.Potions;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.supremetor.tutorialmod.block.ModBlocks;
+import net.supremetor.tutorialmod.block.entity.ModBlockEntities;
 import net.supremetor.tutorialmod.component.ModDataComponentTypes;
 import net.supremetor.tutorialmod.effect.ModEffects;
 import net.supremetor.tutorialmod.enchantment.ModEnchantmentEffects;
@@ -24,6 +25,7 @@ import net.supremetor.tutorialmod.item.ModItemGroups;
 import net.supremetor.tutorialmod.item.ModItems;
 import net.supremetor.tutorialmod.particle.ModParticles;
 import net.supremetor.tutorialmod.potion.ModPotions;
+import net.supremetor.tutorialmod.screen.ModScreenHandlers;
 import net.supremetor.tutorialmod.sound.ModSounds;
 import net.supremetor.tutorialmod.util.HammerUsageEvent;
 import net.supremetor.tutorialmod.util.ModLootTableModifiers;
@@ -55,6 +57,8 @@ public class TutorialMod implements ModInitializer {
         ModVillagers.registerTradeOffers();
         ModParticles.registerParticles();
         ModLootTableModifiers.modifyLootTables();
+        ModBlockEntities.registerBlockEntities();
+        ModScreenHandlers.registerScreenHandlers();
 
         FuelRegistry.INSTANCE.add(ModItems.STARLIGHT_ASHES, 20000);
 

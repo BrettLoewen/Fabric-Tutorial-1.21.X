@@ -5,12 +5,18 @@ import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.particle.v1.ParticleFactoryRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityModelLayerRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
+import net.minecraft.client.gui.screen.ingame.HandledScreens;
 import net.minecraft.client.render.RenderLayer;
+import net.minecraft.client.render.block.entity.BlockEntityRendererFactories;
 import net.supremetor.tutorialmod.block.ModBlocks;
+import net.supremetor.tutorialmod.block.entity.ModBlockEntities;
+import net.supremetor.tutorialmod.block.entity.renderer.PedestalBlockEntityRenderer;
 import net.supremetor.tutorialmod.entity.ModEntities;
 import net.supremetor.tutorialmod.entity.client.*;
 import net.supremetor.tutorialmod.particle.ModParticles;
 import net.supremetor.tutorialmod.particle.PinkGarnetParticle;
+import net.supremetor.tutorialmod.screen.ModScreenHandlers;
+import net.supremetor.tutorialmod.screen.custom.PedestalScreen;
 import net.supremetor.tutorialmod.util.ModModelPredicates;
 
 public class TutorialModClient implements ClientModInitializer {
@@ -33,5 +39,9 @@ public class TutorialModClient implements ClientModInitializer {
         EntityRendererRegistry.register(ModEntities.CHAIR, ChairRenderer::new);
 
         ParticleFactoryRegistry.getInstance().register(ModParticles.PINK_GARNET_PARTICLE, PinkGarnetParticle.Factory::new);
+
+        BlockEntityRendererFactories.register(ModBlockEntities.PEDESTAL_BE, PedestalBlockEntityRenderer::new);
+
+        HandledScreens.register(ModScreenHandlers.PEDESTAL_SCREEN_HANDLER, PedestalScreen::new);
     }
 }
