@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "R": {
-      "item": "tutorial-mod:raw_pink_garnet"
-    }
+    "R": "tutorial-mod:raw_pink_garnet"
   },
   "pattern": [
     "RRR",

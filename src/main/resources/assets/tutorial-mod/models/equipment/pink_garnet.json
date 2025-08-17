@@ -1,0 +1,24 @@
+{
+  "layers": {
+    "wolf_body": [
+      {
+        "texture": "tutorial-mod:pink_garnet"
+      }
+    ],
+    "horse_body": [
+      {
+        "texture": "tutorial-mod:pink_garnet"
+      }
+    ],
+    "humanoid": [
+      {
+        "texture": "tutorial-mod:pink_garnet"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "tutorial-mod:pink_garnet"
+      }
+    ]
+  }
+}

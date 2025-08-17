@@ -1,6 +1,7 @@
 package net.supremetor.tutorialmod.block.custom;
 
 import com.mojang.serialization.MapCodec;
+import net.minecraft.util.ActionResult;
 import net.supremetor.tutorialmod.block.entity.ModBlockEntities;
 import net.supremetor.tutorialmod.block.entity.custom.GrowthChamberBlockEntity;
 import net.minecraft.block.BlockEntityProvider;
@@ -14,7 +15,6 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.screen.NamedScreenHandlerFactory;
 import net.minecraft.util.Hand;
-import net.minecraft.util.ItemActionResult;
 import net.minecraft.util.ItemScatterer;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
@@ -57,15 +57,15 @@ public class GrowthChamberBlock extends BlockWithEntity implements BlockEntityPr
     }
 
     @Override
-    protected ItemActionResult onUseWithItem(ItemStack stack, BlockState state, World world, BlockPos pos,
-                                             PlayerEntity player, Hand hand, BlockHitResult hit) {
+    protected ActionResult onUseWithItem(ItemStack stack, BlockState state, World world, BlockPos pos,
+                                         PlayerEntity player, Hand hand, BlockHitResult hit) {
         if (!world.isClient) {
             NamedScreenHandlerFactory screenHandlerFactory = ((GrowthChamberBlockEntity) world.getBlockEntity(pos));
             if (screenHandlerFactory != null) {
                 player.openHandledScreen(screenHandlerFactory);
             }
         }
-        return ItemActionResult.SUCCESS;
+        return ActionResult.SUCCESS;
     }
 
     @Nullable

@@ -62,13 +62,15 @@ public class TutorialMod implements ModInitializer {
         ModScreenHandlers.registerScreenHandlers();
         ModRecipes.registerRecipes();
 
-        FuelRegistry.INSTANCE.add(ModItems.STARLIGHT_ASHES, 20000);
+        FuelRegistryEvents.BUILD.register(((builder, context) -> {
+            builder.add(ModItems.STARLIGHT_ASHES, 2000);
+        }));
 
         PlayerBlockBreakEvents.BEFORE.register(new HammerUsageEvent());
         AttackEntityCallback.EVENT.register((playerEntity, world, hand, entity, entityHitResult) -> {
             if(entity instanceof SheepEntity sheepEntity && !world.isClient()) {
                 if(playerEntity.getMainHandStack().getItem() instanceof SwordItem swordItem) {
-                    playerEntity.sendMessage(Text.literal("The Player just attacked a sheep with a sword"));
+                    playerEntity.sendMessage(Text.literal("The Player just attacked a sheep with a sword"), false);
                     playerEntity.getMainHandStack().decrement(1);
                     sheepEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.SPEED, 1000, 6));
                 }

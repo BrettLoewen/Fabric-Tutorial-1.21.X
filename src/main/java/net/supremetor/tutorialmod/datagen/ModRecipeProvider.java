@@ -3,11 +3,14 @@ package net.supremetor.tutorialmod.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.data.server.recipe.RecipeExporter;
+import net.minecraft.data.server.recipe.RecipeGenerator;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
+import net.minecraft.registry.RegistryKey;
+import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.util.Identifier;
 import net.supremetor.tutorialmod.TutorialMod;
@@ -23,80 +26,90 @@ public class ModRecipeProvider extends FabricRecipeProvider {
     }
 
     @Override
-    public void generate(RecipeExporter recipeExporter) {
-        List<ItemConvertible> PINK_GARNET_SMELTABLES = List.of(ModItems.RAW_PINK_GARNET, ModBlocks.PINK_GARNET_ORE, ModBlocks.PINK_GARNET_DEEPSLATE_ORE);
+    protected RecipeGenerator getRecipeGenerator(RegistryWrapper.WrapperLookup wrapperLookup, RecipeExporter recipeExporter) {
+        return new RecipeGenerator(wrapperLookup, recipeExporter) {
+            @Override
+            public void generate() {
+                List<ItemConvertible> PINK_GARNET_SMELTABLES = List.of(ModItems.RAW_PINK_GARNET, ModBlocks.PINK_GARNET_ORE, ModBlocks.PINK_GARNET_DEEPSLATE_ORE);
 
-        // All items in PINK_GARNET_SMELTABLES can be smelted into PINK_GARNET
-        offerSmelting(recipeExporter, PINK_GARNET_SMELTABLES, RecipeCategory.MISC, ModItems.PINK_GARNET, 0.25f, 200, "pink_garnet");
-        offerBlasting(recipeExporter, PINK_GARNET_SMELTABLES, RecipeCategory.MISC, ModItems.PINK_GARNET, 0.25f, 100, "pink_garnet");
+                // All items in PINK_GARNET_SMELTABLES can be smelted into PINK_GARNET
+                offerSmelting(PINK_GARNET_SMELTABLES, RecipeCategory.MISC, ModItems.PINK_GARNET, 0.25f, 200, "pink_garnet");
+                offerBlasting(PINK_GARNET_SMELTABLES, RecipeCategory.MISC, ModItems.PINK_GARNET, 0.25f, 100, "pink_garnet");
 
-        // Garnet block to garnet item and vice versa
-        offerReversibleCompactingRecipes(recipeExporter, RecipeCategory.BUILDING_BLOCKS, ModItems.PINK_GARNET, RecipeCategory.DECORATIONS, ModBlocks.PINK_GARNET_BLOCK);
+                // Garnet block to garnet item and vice versa
+                offerReversibleCompactingRecipes(RecipeCategory.BUILDING_BLOCKS, ModItems.PINK_GARNET, RecipeCategory.DECORATIONS, ModBlocks.PINK_GARNET_BLOCK);
 
-        // Manually create a reversible recipe for raw garnet
-        // Item to block
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.RAW_PINK_GARNET_BLOCK)
-                .pattern("RRR")
-                .pattern("RRR")
-                .pattern("RRR")
-                .input('R', ModItems.RAW_PINK_GARNET)
-                .criterion(hasItem(ModItems.RAW_PINK_GARNET), conditionsFromItem(ModItems.RAW_PINK_GARNET))
-                .offerTo(recipeExporter);
-        // Block to item
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.RAW_PINK_GARNET, 9)
-                .input(ModBlocks.RAW_PINK_GARNET_BLOCK)
-                .criterion(hasItem(ModBlocks.RAW_PINK_GARNET_BLOCK), conditionsFromItem(ModBlocks.RAW_PINK_GARNET_BLOCK))
-                .offerTo(recipeExporter);
+                // Manually create a reversible recipe for raw garnet
+                // Item to block
+                createShaped(RecipeCategory.MISC, ModBlocks.RAW_PINK_GARNET_BLOCK)
+                        .pattern("RRR")
+                        .pattern("RRR")
+                        .pattern("RRR")
+                        .input('R', ModItems.RAW_PINK_GARNET)
+                        .criterion(hasItem(ModItems.RAW_PINK_GARNET), conditionsFromItem(ModItems.RAW_PINK_GARNET))
+                        .offerTo(recipeExporter);
+                // Block to item
+                createShapeless(RecipeCategory.MISC, ModItems.RAW_PINK_GARNET, 9)
+                        .input(ModBlocks.RAW_PINK_GARNET_BLOCK)
+                        .criterion(hasItem(ModBlocks.RAW_PINK_GARNET_BLOCK), conditionsFromItem(ModBlocks.RAW_PINK_GARNET_BLOCK))
+                        .offerTo(recipeExporter);
 
-        // Create an extra recipe for magic block to raw pink garnet.
-        // The expanded offerTo is used to give a custom name/id to the recipe because otherwise it would share the same
-        // name as the above raw pink garnet block to item recipe
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.RAW_PINK_GARNET, 32)
-                .input(ModBlocks.MAGIC_BLOCK)
-                .criterion(hasItem(ModBlocks.MAGIC_BLOCK), conditionsFromItem(ModBlocks.MAGIC_BLOCK))
-                .offerTo(recipeExporter, Identifier.of(TutorialMod.MOD_ID, "raw_pink_garnet_from_magic_block"));
+                // Create an extra recipe for magic block to raw pink garnet.
+                // The expanded offerTo is used to give a custom name/id to the recipe because otherwise it would share the same
+                // name as the above raw pink garnet block to item recipe
+                createShapeless(RecipeCategory.MISC, ModItems.RAW_PINK_GARNET, 32)
+                        .input(ModBlocks.MAGIC_BLOCK)
+                        .criterion(hasItem(ModBlocks.MAGIC_BLOCK), conditionsFromItem(ModBlocks.MAGIC_BLOCK))
+                        .offerTo(recipeExporter, RegistryKey.of(RegistryKeys.RECIPE, Identifier.of(TutorialMod.MOD_ID, "raw_pink_garnet_from_magic_block")));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.PINK_GARNET_SWORD)
-                .pattern(" P ")
-                .pattern(" P ")
-                .pattern(" S ")
-                .input('P', ModItems.PINK_GARNET)
-                .input('S', Items.STICK)
-                .criterion(hasItem(ModItems.PINK_GARNET), conditionsFromItem(ModItems.PINK_GARNET))
-                .offerTo(recipeExporter);
-        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.PINK_GARNET_PICKAXE)
-                .pattern("PPP")
-                .pattern(" S ")
-                .pattern(" S ")
-                .input('P', ModItems.PINK_GARNET)
-                .input('S', Items.STICK)
-                .criterion(hasItem(ModItems.PINK_GARNET), conditionsFromItem(ModItems.PINK_GARNET))
-                .offerTo(recipeExporter);
-        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.PINK_GARNET_SHOVEL)
-                .pattern(" P ")
-                .pattern(" S ")
-                .pattern(" S ")
-                .input('P', ModItems.PINK_GARNET)
-                .input('S', Items.STICK)
-                .criterion(hasItem(ModItems.PINK_GARNET), conditionsFromItem(ModItems.PINK_GARNET))
-                .offerTo(recipeExporter);
-        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.PINK_GARNET_AXE)
-                .pattern(" PP")
-                .pattern(" SP")
-                .pattern(" S ")
-                .input('P', ModItems.PINK_GARNET)
-                .input('S', Items.STICK)
-                .criterion(hasItem(ModItems.PINK_GARNET), conditionsFromItem(ModItems.PINK_GARNET))
-                .offerTo(recipeExporter);
-        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.PINK_GARNET_HOE)
-                .pattern(" PP")
-                .pattern(" S ")
-                .pattern(" S ")
-                .input('P', ModItems.PINK_GARNET)
-                .input('S', Items.STICK)
-                .criterion(hasItem(ModItems.PINK_GARNET), conditionsFromItem(ModItems.PINK_GARNET))
-                .offerTo(recipeExporter);
+                createShaped(RecipeCategory.COMBAT, ModItems.PINK_GARNET_SWORD)
+                        .pattern(" P ")
+                        .pattern(" P ")
+                        .pattern(" S ")
+                        .input('P', ModItems.PINK_GARNET)
+                        .input('S', Items.STICK)
+                        .criterion(hasItem(ModItems.PINK_GARNET), conditionsFromItem(ModItems.PINK_GARNET))
+                        .offerTo(recipeExporter);
+                createShaped(RecipeCategory.TOOLS, ModItems.PINK_GARNET_PICKAXE)
+                        .pattern("PPP")
+                        .pattern(" S ")
+                        .pattern(" S ")
+                        .input('P', ModItems.PINK_GARNET)
+                        .input('S', Items.STICK)
+                        .criterion(hasItem(ModItems.PINK_GARNET), conditionsFromItem(ModItems.PINK_GARNET))
+                        .offerTo(recipeExporter);
+                createShaped(RecipeCategory.TOOLS, ModItems.PINK_GARNET_SHOVEL)
+                        .pattern(" P ")
+                        .pattern(" S ")
+                        .pattern(" S ")
+                        .input('P', ModItems.PINK_GARNET)
+                        .input('S', Items.STICK)
+                        .criterion(hasItem(ModItems.PINK_GARNET), conditionsFromItem(ModItems.PINK_GARNET))
+                        .offerTo(recipeExporter);
+                createShaped(RecipeCategory.TOOLS, ModItems.PINK_GARNET_AXE)
+                        .pattern(" PP")
+                        .pattern(" SP")
+                        .pattern(" S ")
+                        .input('P', ModItems.PINK_GARNET)
+                        .input('S', Items.STICK)
+                        .criterion(hasItem(ModItems.PINK_GARNET), conditionsFromItem(ModItems.PINK_GARNET))
+                        .offerTo(recipeExporter);
+                createShaped(RecipeCategory.TOOLS, ModItems.PINK_GARNET_HOE)
+                        .pattern(" PP")
+                        .pattern(" S ")
+                        .pattern(" S ")
+                        .input('P', ModItems.PINK_GARNET)
+                        .input('S', Items.STICK)
+                        .criterion(hasItem(ModItems.PINK_GARNET), conditionsFromItem(ModItems.PINK_GARNET))
+                        .offerTo(recipeExporter);
 
-        offerSmithingTrimRecipe(recipeExporter, ModItems.KAUPEN_SMITHING_TEMPLATE, Identifier.of(TutorialMod.MOD_ID, "kaupen"));
+                offerSmithingTrimRecipe(ModItems.KAUPEN_SMITHING_TEMPLATE, RegistryKey.of(RegistryKeys.RECIPE, Identifier.of(TutorialMod.MOD_ID, "kaupen")));
+            }
+        };
+    }
+
+    @Override
+    public String getName() {
+        return "Tutorial Mod Recipes";
     }
 }

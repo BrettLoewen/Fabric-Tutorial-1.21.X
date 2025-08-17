@@ -1,4 +1,4 @@
-// 1.21	2025-08-16T20:22:00.223243	Tutorial Mod/Tags for minecraft:item
+// 1.21.3	2025-08-17T16:22:56.8123396	Tutorial Mod/Tags for minecraft:item
 c6eef048482a23189de8dd68b6eb58176fb84216 data\tutorial-mod\tags\item\transformable_items.json
 5e11a0ae6006e2571d3592a676baecb5b42b323a data\minecraft\tags\item\trim_materials.json
 a42fa1a707797da2637835f682adcf7b345729b6 data\minecraft\tags\item\enchantable\chest_armor.json
@@ -14,4 +14,5 @@ ffb05c273aadd5957c6a583904b567b142bacc24 data\minecraft\tags\item\swords.json
 ec022c094af930b1fb0b0c7ee8d016aded0b30ec data\minecraft\tags\item\trim_templates.json
 d39b9aa988f82a467b9d5a3a750b9a30f0258c9f data\minecraft\tags\item\enchantable\leg_armor.json
 d9302e8c920e26d88cd5de71c1dbaf4062ef033e data\minecraft\tags\item\planks.json
+5e11a0ae6006e2571d3592a676baecb5b42b323a data\tutorial-mod\tags\item\pink_garnet_repair.json
 f7ca01433d6e428775be33098240b2a724c8110c data\minecraft\tags\item\enchantable\foot_armor.json

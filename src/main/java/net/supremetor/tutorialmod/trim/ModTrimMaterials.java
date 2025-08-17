@@ -1,7 +1,7 @@
 package net.supremetor.tutorialmod.trim;
 
 import net.minecraft.item.Item;
-import net.minecraft.item.trim.ArmorTrimMaterial;
+import net.minecraft.item.equipment.trim.ArmorTrimMaterial;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.RegistryKey;

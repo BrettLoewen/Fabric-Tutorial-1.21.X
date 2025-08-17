@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "key": {
-    "P": {
-      "item": "tutorial-mod:pink_garnet"
-    },
-    "S": {
-      "item": "minecraft:stick"
-    }
+    "P": "tutorial-mod:pink_garnet",
+    "S": "minecraft:stick"
   },
   "pattern": [
     "PPP",

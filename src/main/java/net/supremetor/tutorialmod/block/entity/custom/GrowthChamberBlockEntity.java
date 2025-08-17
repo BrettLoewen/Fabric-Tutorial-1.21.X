@@ -1,6 +1,7 @@
 package net.supremetor.tutorialmod.block.entity.custom;
 
 import net.fabricmc.fabric.api.screenhandler.v1.ExtendedScreenHandlerFactory;
+import net.minecraft.server.world.ServerWorld;
 import net.supremetor.tutorialmod.block.entity.ImplementedInventory;
 import net.supremetor.tutorialmod.block.entity.ModBlockEntities;
 import net.supremetor.tutorialmod.recipe.GrowthChamberRecipe;
@@ -151,7 +152,7 @@ public class GrowthChamberBlockEntity extends BlockEntity implements ExtendedScr
     }
 
     private Optional<RecipeEntry<GrowthChamberRecipe>> getCurrentRecipe() {
-        return this.getWorld().getRecipeManager()
+        return ((ServerWorld) this.getWorld()).getRecipeManager()
                 .getFirstMatch(ModRecipes.GROWTH_CHAMBER_TYPE, new GrowthChamberRecipeInput(inventory.get(INPUT_SLOT)), this.getWorld());
     }
 

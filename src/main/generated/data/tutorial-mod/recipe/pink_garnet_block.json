@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "#": {
-      "item": "tutorial-mod:pink_garnet"
-    }
+    "#": "tutorial-mod:pink_garnet"
   },
   "pattern": [
     "###",

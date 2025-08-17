@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    {
-      "item": "tutorial-mod:magic_block"
-    }
+    "tutorial-mod:magic_block"
   ],
   "result": {
     "count": 32,

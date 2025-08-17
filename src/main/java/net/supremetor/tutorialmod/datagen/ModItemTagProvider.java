@@ -3,7 +3,6 @@ package net.supremetor.tutorialmod.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.registry.RegistryWrapper;
-import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.registry.tag.ItemTags;
 import net.supremetor.tutorialmod.block.ModBlocks;
 import net.supremetor.tutorialmod.item.ModItems;
@@ -21,6 +20,9 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(ModTags.Items.TRANSFORMABLE_ITEMS)
                 .add(ModItems.PINK_GARNET)
                 .add(ModItems.RAW_PINK_GARNET);
+
+        getOrCreateTagBuilder(ModTags.Items.PINK_GARNET_REPAIR)
+                .add(ModItems.PINK_GARNET);
 
         getOrCreateTagBuilder(ItemTags.SWORDS)
                 .add(ModItems.PINK_GARNET_SWORD);

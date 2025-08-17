@@ -3,12 +3,15 @@ package net.supremetor.tutorialmod.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.*;
+import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.util.Identifier;
+import net.supremetor.tutorialmod.TutorialMod;
 import net.supremetor.tutorialmod.block.ModBlocks;
 import net.supremetor.tutorialmod.block.custom.CauliflowerCropBlock;
 import net.supremetor.tutorialmod.block.custom.HoneyBerryBushBlock;
 import net.supremetor.tutorialmod.block.custom.PinkGarnetLampBlock;
+import net.supremetor.tutorialmod.item.ModArmorMaterials;
 import net.supremetor.tutorialmod.item.ModItems;
 
 import java.util.Optional;
@@ -79,10 +82,14 @@ public class ModModelProvider extends FabricModelProvider {
 
         itemModelGenerator.register(ModItems.PINK_GARNET_HAMMER, Models.HANDHELD);
 
-        itemModelGenerator.registerArmor((ArmorItem) ModItems.PINK_GARNET_HELMET);
-        itemModelGenerator.registerArmor((ArmorItem) ModItems.PINK_GARNET_CHESTPLATE);
-        itemModelGenerator.registerArmor((ArmorItem) ModItems.PINK_GARNET_LEGGINGS);
-        itemModelGenerator.registerArmor((ArmorItem) ModItems.PINK_GARNET_BOOTS);
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.PINK_GARNET_HELMET), Identifier.of(TutorialMod.MOD_ID, "pink_garnet"),
+                ModArmorMaterials.PINK_GARNET, EquipmentSlot.HEAD);
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.PINK_GARNET_CHESTPLATE), Identifier.of(TutorialMod.MOD_ID, "pink_garnet"),
+                ModArmorMaterials.PINK_GARNET, EquipmentSlot.CHEST);
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.PINK_GARNET_LEGGINGS), Identifier.of(TutorialMod.MOD_ID, "pink_garnet"),
+                ModArmorMaterials.PINK_GARNET, EquipmentSlot.LEGS);
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.PINK_GARNET_BOOTS), Identifier.of(TutorialMod.MOD_ID, "pink_garnet"),
+                ModArmorMaterials.PINK_GARNET, EquipmentSlot.FEET);
 
         itemModelGenerator.register(ModItems.PINK_GARNET_HORSE_ARMOR, Models.GENERATED);
 
