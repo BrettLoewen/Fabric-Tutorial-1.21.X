@@ -92,6 +92,7 @@ public class ModItemGroups {
 
                                 entries.add(ModBlocks.CHAIR);
                                 entries.add(ModBlocks.PEDESTAL);
+                                entries.add(ModBlocks.GROWTH_CHAMBER);
                             }).build());
 
     public static void registerItemGroups() {

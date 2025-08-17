@@ -1,0 +1,10 @@
+{
+  "type": "tutorial-mod:growth_chamber",
+  "ingredient": {
+    "item": "tutorial-mod:raw_pink_garnet"
+  },
+  "result": {
+    "count": 16,
+    "id": "tutorial-mod:pink_garnet"
+  }
+}

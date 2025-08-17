@@ -25,6 +25,7 @@ import net.supremetor.tutorialmod.item.ModItemGroups;
 import net.supremetor.tutorialmod.item.ModItems;
 import net.supremetor.tutorialmod.particle.ModParticles;
 import net.supremetor.tutorialmod.potion.ModPotions;
+import net.supremetor.tutorialmod.recipe.ModRecipes;
 import net.supremetor.tutorialmod.screen.ModScreenHandlers;
 import net.supremetor.tutorialmod.sound.ModSounds;
 import net.supremetor.tutorialmod.util.HammerUsageEvent;
@@ -59,6 +60,7 @@ public class TutorialMod implements ModInitializer {
         ModLootTableModifiers.modifyLootTables();
         ModBlockEntities.registerBlockEntities();
         ModScreenHandlers.registerScreenHandlers();
+        ModRecipes.registerRecipes();
 
         FuelRegistry.INSTANCE.add(ModItems.STARLIGHT_ASHES, 20000);
 

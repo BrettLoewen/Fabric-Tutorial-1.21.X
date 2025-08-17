@@ -16,6 +16,7 @@ import net.supremetor.tutorialmod.entity.client.*;
 import net.supremetor.tutorialmod.particle.ModParticles;
 import net.supremetor.tutorialmod.particle.PinkGarnetParticle;
 import net.supremetor.tutorialmod.screen.ModScreenHandlers;
+import net.supremetor.tutorialmod.screen.custom.GrowthChamberScreen;
 import net.supremetor.tutorialmod.screen.custom.PedestalScreen;
 import net.supremetor.tutorialmod.util.ModModelPredicates;
 
@@ -41,7 +42,8 @@ public class TutorialModClient implements ClientModInitializer {
         ParticleFactoryRegistry.getInstance().register(ModParticles.PINK_GARNET_PARTICLE, PinkGarnetParticle.Factory::new);
 
         BlockEntityRendererFactories.register(ModBlockEntities.PEDESTAL_BE, PedestalBlockEntityRenderer::new);
-
         HandledScreens.register(ModScreenHandlers.PEDESTAL_SCREEN_HANDLER, PedestalScreen::new);
+
+        HandledScreens.register(ModScreenHandlers.GROWTH_CHAMBER_SCREEN_HANDLER, GrowthChamberScreen::new);
     }
 }
